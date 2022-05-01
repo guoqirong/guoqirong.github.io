@@ -2,11 +2,13 @@
 <html>
   <head>
     <meta charset="utf-8" />
+
     <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"
+      http-equiv="Content-Security-Policy"
+      content="script-src 'self' https://cdn.tiny.cloud 'sha256-YM8uI2F+VfHULiDF1T+UCYmPwssvvWleyz5k2gtmTQo=' 'sha256-nET88aL5DQBdtSN4HNO1r6ysmi+5edbZhF2Kxoj2too='; object-src 'none'; child-src https:"
     />
-    <link rel="stylesheet" href="/umi-qiankun/umi.css" />
+
+    <link rel="stylesheet" href="/umi.css" />
     <script>
       window.routerBase = "/";
     </script>
@@ -15,8 +17,10 @@
     </script>
   </head>
   <body>
-    <div id="root-master"></div>
+    <div id="root"></div>
 
-    <script src="/umi-qiankun/umi.js"></script>
+    <div id="root-master"></div>
+    <script src="/vendors.js"></script>
+    <script src="/umi.js"></script>
   </body>
 </html>

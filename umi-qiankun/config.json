@@ -2,7 +2,7 @@
   "apps": [
     {
       "name": "vue3-cnode",
-      "entry": "https://guoqirong.github.io/vue3-cnode/",
+      "entry": "http://localhost:8080",
       "activeRule": "/#/vue3-cnode"
     }
   ],
