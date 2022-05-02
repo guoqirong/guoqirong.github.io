@@ -16,17 +16,21 @@
     <link rel="stylesheet" href="/umi-cnode/antd.chunk.css" />
     <link rel="stylesheet" href="/umi-cnode/umi.css" />
     <script>
-      window.routerBase = "/";
+      window.routerBase = "/umi-cnode";
+    </script>
+    <script>
+      window.publicPath =
+        window.__INJECTED_PUBLIC_PATH_BY_QIANKUN__ || "/umi-cnode/";
     </script>
     <script>
       //! umi version: 3.5.21
     </script>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root" style="height: 100vh; overflow-y: auto"></div>
 
     <script src="/umi-cnode/vendors.js"></script>
     <script src="/umi-cnode/antd.js"></script>
-    <script src="/umi-cnode/umi.js"></script>
+    <script src="/umi-cnode/umi.js" entry=""></script>
   </body>
 </html>
