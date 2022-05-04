@@ -9,3 +9,5 @@
 [umi-cnode](https://guoqirong.github.io/umi-cnode)
 
 [umi-qiankun](https://guoqirong.github.io/umi-qiankun)
+
+[react-qiankun](https://guoqirong.github.io/react-qiankun)
