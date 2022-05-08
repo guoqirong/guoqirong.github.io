@@ -1,0 +1,60 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/vue-vite-cnode/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline' https://cdn.tiny.cloud; object-src 'none'; child-src https:">
+    <title>vue-vite-cnode</title>
+    <script crossorigin="">import('/vue-vite-cnode/static/js/index-6ed5d7bd.js').finally(() => {
+            
+    const qiankunLifeCycle = window.moudleQiankunAppLifeCycles && window.moudleQiankunAppLifeCycles['viteapp'];
+    if (qiankunLifeCycle) {
+      window.proxy.vitemount((props) => qiankunLifeCycle.mount(props));
+      window.proxy.viteunmount((props) => qiankunLifeCycle.unmount(props));
+      window.proxy.vitebootstrap(() => qiankunLifeCycle.bootstrap());
+      window.proxy.viteupdate((props) => qiankunLifeCycle.update(props));
+    }
+  
+          })</script>
+    <link rel="modulepreload" href="/vue-vite-cnode/static/js/@vue-a3b8ecb2.js">
+    <link rel="modulepreload" href="/vue-vite-cnode/static/js/vite-plugin-qiankun-075a3e44.js">
+    <link rel="modulepreload" href="/vue-vite-cnode/static/js/@vueuse-972b0b46.js">
+    <link rel="modulepreload" href="/vue-vite-cnode/static/js/@element-plus-2403d92f.js">
+    <link rel="modulepreload" href="/vue-vite-cnode/static/js/@ctrl-eb0b847c.js">
+    <link rel="modulepreload" href="/vue-vite-cnode/static/js/lodash-es-8dd21e31.js">
+    <link rel="modulepreload" href="/vue-vite-cnode/static/js/async-validator-1193b133.js">
+    <link rel="modulepreload" href="/vue-vite-cnode/static/js/@popperjs-892fd7f5.js">
+    <link rel="modulepreload" href="/vue-vite-cnode/static/js/axios-eec2155c.js">
+    <link rel="modulepreload" href="/vue-vite-cnode/static/js/element-plus-087faedc.js">
+    <link rel="modulepreload" href="/vue-vite-cnode/static/js/vuex-a79d8c7c.js">
+    <link rel="modulepreload" href="/vue-vite-cnode/static/js/vue-router-9467f4ca.js">
+    <link rel="modulepreload" href="/vue-vite-cnode/static/js/mitt-dab1f1cb.js">
+    <link rel="stylesheet" href="/vue-vite-cnode/static/css/element-plus-d5ff388e.css">
+    <link rel="stylesheet" href="/vue-vite-cnode/static/css/index-181b8d4b.css">
+  </head>
+  <body>
+    <div id="app"></div>
+    
+  
+
+<script>
+  const createDeffer = (hookName) => {
+    const d = new Promise((resolve, reject) => {
+      window.proxy && (window.proxy[`vite${hookName}`] = resolve)
+    })
+    return props => d.then(fn => fn(props));
+  }
+  const bootstrap = createDeffer('bootstrap');
+  const mount = createDeffer('mount');
+  const unmount = createDeffer('unmount');
+  const update = createDeffer('update');
+
+  ;(global => {
+    global.qiankunName = 'viteapp';
+    global['viteapp'] = {
+      bootstrap,
+      mount,
+      unmount,
+      update
+    };
+  })(window);
+</script></body></html>
