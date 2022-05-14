@@ -15,3 +15,5 @@
 [react-qiankun](https://guoqirong.github.io/react-qiankun)
 
 [vue-qiankun](https://guoqirong.github.io/vue-qiankun)
+
+[vue-vite-qiankun](https://guoqirong.github.io/vue-vite-qiankun)
